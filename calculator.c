@@ -41,6 +41,7 @@ int main(int argc, char **argv) {
     result = a*b;
   } else if(choice == 4) {
     //TODO: handle this case (division)
+    result = a/b;
   } else if(choice == 5) {
     //TODO: handle this case (minimum)
   } else if(choice == 6) {
