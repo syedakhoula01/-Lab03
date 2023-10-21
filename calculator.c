@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
     }
     else
     {
-      
+      printf("Error , you entered a negative value");
     }
   } else {
     printf("Please input a valid operator next time");
