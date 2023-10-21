@@ -40,6 +40,12 @@ int main(int argc, char **argv) {
       tax=5000+(agi>5000) * 0.20;
       printf("%f" , tax);
      }
+     else{
+      printf("tax");
+     }
+
+     childCredit = numChildren * 1000;
+     totalTax = childCredit - tax;
 
 
   printf("AGI:          $%10.2f\n", agi);
