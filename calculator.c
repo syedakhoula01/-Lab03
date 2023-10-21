@@ -44,6 +44,7 @@ int main(int argc, char **argv) {
     result = a/b;
   } else if(choice == 5) {
     //TODO: handle this case (minimum)
+    result =mi(a,b);
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
   } else {
