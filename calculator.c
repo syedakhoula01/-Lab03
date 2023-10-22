@@ -11,6 +11,14 @@
 #include <stdio.h>
 #include <math.h>
 
+<<<<<<< HEAD
+=======
+int min( int x , int y)
+{
+  int ans = (x<y) ? x:y;
+  return ans;
+}
+>>>>>>> dde824b23d390bf7a143d448a490fef863bfd808
 
 int main(int argc, char **argv) {
 
@@ -41,6 +49,7 @@ int main(int argc, char **argv) {
     result =a*b;
     printf("result %f", result);
     //TODO: handle this case (multiplication)
+    result = a*b;
   } else if(choice == 4) {
     if(b!=0)
     {
@@ -52,10 +61,12 @@ int main(int argc, char **argv) {
       printf("Error : division by zero is not allowed");
     }
     //TODO: handle this case (division)
+    result = a/b;
   } else if(choice == 5) {
     result = (a<b) ? a:b;
     printf("result:%f", result);
     //TODO: handle this case (minimum)
+    result =min(a,b);
   } else if(choice == 6) {
     if(a>0 && a!=1 && b>0)
     {
@@ -67,6 +78,15 @@ int main(int argc, char **argv) {
      printf("error");
     }
     //TODO: handle this case (log_a(b))
+    if(a>0 && b>0)
+    {
+      result = log(a)/log(b);
+      printf("%f" ,result);
+    }
+    else
+    {
+      printf("Error , you entered a negative value");
+    }
   } else {
     printf("Please input a valid operator next time");
   }
