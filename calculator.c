@@ -11,6 +11,12 @@
 #include <stdio.h>
 #include <math.h>
 
+int min( int x , int y)
+{
+  int ans = (x<y) ? x:y;
+  return ans;
+}
+
 int main(int argc, char **argv) {
 
   double a, b, result;
@@ -44,13 +50,13 @@ int main(int argc, char **argv) {
     result = a/b;
   } else if(choice == 5) {
     //TODO: handle this case (minimum)
-    result =mi(a,b);
+    result =min(a,b);
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
     if(a>0 && b>0)
     {
       result = log(a)/log(b);
-      printf("%f", result;)
+      printf("%f" ,result);
     }
     else
     {
