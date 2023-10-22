@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <math.h>
 
+
 int main(int argc, char **argv) {
 
   double a, b, result;
@@ -37,10 +38,22 @@ int main(int argc, char **argv) {
     result = a - b;
     printf("%f", result);
   } else if(choice == 3) {
+    result =a*b;
+    printf("result %f", result);
     //TODO: handle this case (multiplication)
   } else if(choice == 4) {
+    if(b!=0)
+    {
+      result = a/b;
+      printf("result: %f",result);
+    }
+    else
+    {
+      printf("Error : division by zero is not allowed");
+    }
     //TODO: handle this case (division)
   } else if(choice == 5) {
+    
     //TODO: handle this case (minimum)
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
