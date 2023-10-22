@@ -53,9 +53,19 @@ int main(int argc, char **argv) {
     }
     //TODO: handle this case (division)
   } else if(choice == 5) {
-    
+    result = (a<b) ? a:b;
+    printf("result:%f", result);
     //TODO: handle this case (minimum)
   } else if(choice == 6) {
+    if(a>0 && a!=1 && b>0)
+    {
+      result=log(b)/ log(a);
+      printf("result:%f", result);
+    }
+    else
+    {
+     printf("error");
+    }
     //TODO: handle this case (log_a(b))
   } else {
     printf("Please input a valid operator next time");
