@@ -9,16 +9,7 @@
  */
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
-
-<<<<<<< HEAD
-=======
-int min( int x , int y)
-{
-  int ans = (x<y) ? x:y;
-  return ans;
-}
->>>>>>> dde824b23d390bf7a143d448a490fef863bfd808
+#include<math.h>
 
 int main(int argc, char **argv) {
 
